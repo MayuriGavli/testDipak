@@ -1,0 +1,13 @@
+prefix=/Users/dipakgavali/Documents/MR/ml_project1/testDipak/env
+exec_prefix=/Users/dipakgavali/Documents/MR/ml_project1/testDipak/env
+libdir=/Users/dipakgavali/Documents/MR/ml_project1/testDipak/env/lib
+sharedlibdir=/Users/dipakgavali/Documents/MR/ml_project1/testDipak/env/lib
+includedir=/Users/dipakgavali/Documents/MR/ml_project1/testDipak/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
