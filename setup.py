@@ -1,11 +1,22 @@
-from setuptools import find_packages,setup
+from setuptools import setup, find_packages
+from typing import List
+
+hypen = "-e ."
+def get_requirements(file_path: str) -> List[str]:
+    requirements=[]
+    with open(file_path) as file:
+        requirements=file.readlines()
+        requirements = [line.strip() for line in requirements ]
+        if hypen in requirements:
+            requirements.remove(hypen)
+    return requirements
 
 setup(
-    name="Mayuri",
+    name="mlproject",
     version="0.0.1",
-    description="This is MR first ml Project.",
+    description="This is MR's first ML project.",
     author="MR",
     author_email="mrgavli9@gmail.com",
-    packages=find_packages(),
-    install_requires = ['pandas','numpy','seaborn'],
+    packages=find_packages(),  # Automatically find sub-packages
+    install_requires=get_requirements("requirements.txt"),
 )

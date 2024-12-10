@@ -1,4 +1,4 @@
-==> 2024-12-08 11:10:47 <==
+==> 2024-12-09 09:07:37 <==
 # cmd: /Users/dipakgavali/anaconda3/bin/conda create -p env python==3.8 -y
 # conda version: 23.7.2
 +defaults/osx-64::ca-certificates-2024.11.26-hecd8cb5_0
