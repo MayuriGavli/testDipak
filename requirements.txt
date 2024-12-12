@@ -1,4 +1,5 @@
 pandas
 numpy
 seaborn
--e .
+-e . # to trigger setup.py file to build the package inside setup.py file . 
+    #where . refer to current directory which contain setup.py , -e tells pip to install the package in editable mode 
