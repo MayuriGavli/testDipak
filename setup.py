@@ -42,5 +42,5 @@ setup(
     author="MR",
     author_email="mrgavli9@gmail.com",
     packages=find_packages(),  # Automatically find sub-packages
-    install_requires=get_requirements("requirements.txt"),
+    install_requires=get_requirements("packages.txt"),
 )
