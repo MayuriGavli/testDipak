@@ -1,5 +1,4 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[cod]
 *$py.class
 
@@ -129,6 +128,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env/
 
 # Spyder project settings
 .spyderproject
@@ -160,3 +160,29 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+
+
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE or editor-specific files
+.idea/
+.vscode/
+*.swp
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other common files to ignore
+.DS_Store
+Thumbs.db
