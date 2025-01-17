@@ -32,7 +32,7 @@ def get_requirements(file_path: str) -> List[str]:
         requirements = file.readlines()
         requirements = [line.strip() for line in requirements ]  # Remove empty lines
         if "-e ." in requirements:
-            requirements.remove("-e .")  # Remove the local editable install
+            requirements.remove("-e .")  # Remove the local editable install bcz we just have to access the library only
     return requirements
 
 setup(
